@@ -6,6 +6,6 @@ import { withTheme } from '../../../hocs/withTheme';
 const ThemedIcon = withTheme(Icon);
 
 test('renders a default Icon', () => {
-    const { baseElement } = render(<ThemedIcon />);
-    expect(baseElement).toMatchSnapshot();
+  const { baseElement } = render(<ThemedIcon />);
+  expect(baseElement).toMatchSnapshot();
 });

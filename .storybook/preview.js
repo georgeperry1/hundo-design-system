@@ -7,16 +7,16 @@ const themes = [darkTheme, lightTheme];
 addDecorator(withThemesProvider(themes), ThemeProvider);
 
 export const parameters = {
-    actions: { argTypesRegex: '^on[A-Z].*' },
-    controls: {
-        matchers: {
-            color: /(background|color)$/i,
-            date: /Date$/,
-        },
+  actions: { argTypesRegex: '^on[A-Z].*' },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
     },
-    options: {
-        storySort: {
-            order: ['Docs', 'Getting Started', 'Components'],
-        },
+  },
+  options: {
+    storySort: {
+      order: ['Docs', 'Getting Started', 'Components'],
     },
+  },
 };

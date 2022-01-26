@@ -4,7 +4,7 @@ exports[`Button handles onClick 1`] = `
 <body>
   <div>
     <button
-      class="sc-bdnxRM dTEMSW"
+      class="sc-bdvvtL kkycAQ"
     >
       Click Me
     </button>
@@ -16,7 +16,7 @@ exports[`Button renders a default button with text 1`] = `
 <body>
   <div>
     <button
-      class="sc-bdnxRM dTEMSW"
+      class="sc-bdvvtL kkycAQ"
     >
       Click me
     </button>
@@ -28,7 +28,7 @@ exports[`Button renders a primary button 1`] = `
 <body>
   <div>
     <button
-      class="sc-bdnxRM dTEMSW"
+      class="sc-bdvvtL kkycAQ"
     >
       Click me
     </button>

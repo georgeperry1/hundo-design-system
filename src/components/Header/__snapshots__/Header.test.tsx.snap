@@ -5,11 +5,11 @@ exports[`Button renders a default header while user is defined  1`] = `
   <div>
     <header>
       <div
-        class="sc-dlnjwi czjjER"
+        class="sc-dkPtRN gxDGuL"
       >
         <div>
           <svg
-            class="sc-gtsrHT fNKQCe"
+            class="sc-gsDKAQ bLZlKY"
             height="32"
             viewBox="0 0 32 32"
             width="32"
@@ -34,7 +34,7 @@ exports[`Button renders a default header while user is defined  1`] = `
             </g>
           </svg>
           <h1
-            class="sc-hKFxyN fFmBQZ"
+            class="sc-hKwDye jzrddc"
             font-size="20"
             font-weight="800"
           >
@@ -43,7 +43,7 @@ exports[`Button renders a default header while user is defined  1`] = `
         </div>
         <div>
           <button
-            class="sc-bdnxRM dTEMSW"
+            class="sc-bdvvtL kkycAQ"
           >
             Log out
           </button>
@@ -59,11 +59,11 @@ exports[`Button renders a default header while user is underfined 1`] = `
   <div>
     <header>
       <div
-        class="sc-dlnjwi czjjER"
+        class="sc-dkPtRN gxDGuL"
       >
         <div>
           <svg
-            class="sc-gtsrHT fNKQCe"
+            class="sc-gsDKAQ bLZlKY"
             height="32"
             viewBox="0 0 32 32"
             width="32"
@@ -88,7 +88,7 @@ exports[`Button renders a default header while user is underfined 1`] = `
             </g>
           </svg>
           <h1
-            class="sc-hKFxyN fFmBQZ"
+            class="sc-hKwDye jzrddc"
             font-size="20"
             font-weight="800"
           >
@@ -97,12 +97,12 @@ exports[`Button renders a default header while user is underfined 1`] = `
         </div>
         <div>
           <button
-            class="sc-bdnxRM dTEMSW"
+            class="sc-bdvvtL kkycAQ"
           >
             Log in
           </button>
           <button
-            class="sc-bdnxRM fVYaCq"
+            class="sc-bdvvtL kkiZEk"
           >
             Sign up
           </button>

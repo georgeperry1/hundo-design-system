@@ -38,58 +38,58 @@ a custome template for developpers that want to start building their component l
 
 ## 🚀 Quick Links
 
--   Checkout the [npm](https://www.npmjs.com/package/react-component-lib-boilerplate)
--   Checkout the [storybook](https://chamsbouzaiene.github.io/react-component-lib-boilerplate/)
--   Learn more in the [docs](https://chamsbouzaiene.github.io/react-component-lib-boilerplate/?path=/story/docs-getting-started-quick-start--page)
--   Explore the library on [Chroma](https://www.chromatic.com/library?appId=609c917d0b987a00390d989b)
--   Learn about updates from the [changelog](CHANGELOG.md)
+- Checkout the [npm](https://www.npmjs.com/package/react-component-lib-boilerplate)
+- Checkout the [storybook](https://chamsbouzaiene.github.io/react-component-lib-boilerplate/)
+- Learn more in the [docs](https://chamsbouzaiene.github.io/react-component-lib-boilerplate/?path=/story/docs-getting-started-quick-start--page)
+- Explore the library on [Chroma](https://www.chromatic.com/library?appId=609c917d0b987a00390d989b)
+- Learn about updates from the [changelog](CHANGELOG.md)
 
 ## 🤔 Why ?
 
--   Am Lazy ,I built this project so i can have a template to build react component library from it ,I don't want to spend more days configureing linters ci/cd typescript etc..
+- Am Lazy ,I built this project so i can have a template to build react component library from it ,I don't want to spend more days configureing linters ci/cd typescript etc..
 
 ## 🤓 How to use it
 
 ### Template
 
--   All you have to do to use our fancy template library thanks to github is press the gree button at the top right `Use This Template` make sure to grab `gh-pages` branch like that tada you have the setup with the ci/cd feature and all the goodies.
+- All you have to do to use our fancy template library thanks to github is press the gree button at the top right `Use This Template` make sure to grab `gh-pages` branch like that tada you have the setup with the ci/cd feature and all the goodies.
 
--   you need to setup two secret keys under github secrets for the Github Acions
+- you need to setup two secret keys under github secrets for the Github Acions
 
-    -   `CHROMATIC_PROJECT_TOKEN` [Chromatic](https://www.chromatic.com/) project token
-    -   `NPM_TOKEN` [NPM](https://www.npm.com/) project token
+  - `CHROMATIC_PROJECT_TOKEN` [Chromatic](https://www.chromatic.com/) project token
+  - `NPM_TOKEN` [NPM](https://www.npm.com/) project token
 
--   clone the repo and start coding your new fancy component library
+- clone the repo and start coding your new fancy component library
 
--   don't forget to change the name of the package change the author reset the tags and start publishing your fancy lib
+- don't forget to change the name of the package change the author reset the tags and start publishing your fancy lib
 
 ### Base Library
 
--   The library is exporting sample base components to be used in react project you can test it like this :
-    -   NPM: `npm install react-component-lib-boilerplate --save`
-    -   YARN: `yarn add react-component-lib-boilerplate`
+- The library is exporting sample base components to be used in react project you can test it like this :
+  - NPM: `npm install react-component-lib-boilerplate --save`
+  - YARN: `yarn add react-component-lib-boilerplate`
 
 ```js
 import { ThemeProvider, Button, Header } from 'react-component-lib-boilerplate';
 
 function App() {
-    return (
-        <div className="App">
-            <ThemeProvider>
-                <Button label="hi" />
-                <Header user={{ name: 'chams' }} />
-            </ThemeProvider>{' '}
-        </div>
-    );
+  return (
+    <div className="App">
+      <ThemeProvider>
+        <Button label="hi" />
+        <Header user={{ name: 'chams' }} />
+      </ThemeProvider>{' '}
+    </div>
+  );
 }
 ```
 
--   As shown above the library is exporting `ThemeProvider` a component that give us the capacity to introduce themes to our base components
+- As shown above the library is exporting `ThemeProvider` a component that give us the capacity to introduce themes to our base components
 
--   To customize various elements, we use our custom [Styled Components Themes]. This gives you fine grain control over the styles there is to available themes dark and light theme now we are using darktheme as default:
+- To customize various elements, we use our custom [Styled Components Themes]. This gives you fine grain control over the styles there is to available themes dark and light theme now we are using darktheme as default:
 
-    -   `lightTheme`
-    -   `theme`
+  - `lightTheme`
+  - `theme`
 
 You can change the theme using styled-component ThemeProvider
 
@@ -105,49 +105,49 @@ function App() {
 }
 ```
 
--   this themes are customisable by the library developper or by the end-user who can extend them as he wish that's why it's a good idea to export a base Theme
+- this themes are customisable by the library developper or by the end-user who can extend them as he wish that's why it's a good idea to export a base Theme
 
 ## ✨ Features
 
--   Visual Testing / Chromatic :
+- Visual Testing / Chromatic :
 
-    -   using chromatic you can track version of your storybook test visual changes and access your storybooks
-    -   we are using chromatic application to apply visual testing when the dev create a merge request we deploy the storybook stories to chromatic and we diff the images and we ask for review in order to accept the PR
+  - using chromatic you can track version of your storybook test visual changes and access your storybooks
+  - we are using chromatic application to apply visual testing when the dev create a merge request we deploy the storybook stories to chromatic and we diff the images and we ask for review in order to accept the PR
 
--   Components exampels (base components):
+- Components exampels (base components):
 
-    -   i have built this component to showcase a pattern for the user all our components are built in typescript we decompose all of them to styled/test/stories/component
+  - i have built this component to showcase a pattern for the user all our components are built in typescript we decompose all of them to styled/test/stories/component
 
--   Styled-system / styled-components :
+- Styled-system / styled-components :
 
-    -   this two libraries are a match made in heaven we are using them to enhance the development experience , using the theme we are able to create props variants that make our style props determinstic.
+  - this two libraries are a match made in heaven we are using them to enhance the development experience , using the theme we are able to create props variants that make our style props determinstic.
 
--   Testing :
+- Testing :
 
-    -   we are using react-testing-library to test most of our components and we advise you to do the same at least test the entry points and add a snapshot
+  - we are using react-testing-library to test most of our components and we advise you to do the same at least test the entry points and add a snapshot
 
--   Components :
+- Components :
 
-    -   the base components are there to guide the user on how to satisfy our linters typescript
+  - the base components are there to guide the user on how to satisfy our linters typescript
 
--   StoryBook :
+- StoryBook :
 
-    -   is a big part of this library we can use it to write custom documentation as well as components documentation we also ship the library with accessibility addons to test the componet accessibility
+  - is a big part of this library we can use it to write custom documentation as well as components documentation we also ship the library with accessibility addons to test the componet accessibility
 
--   Prettier/eslint :
+- Prettier/eslint :
 
-    -   the library is preconfigured with eslint and prettier for typescript
+  - the library is preconfigured with eslint and prettier for typescript
 
--   Build :
+- Build :
 
-    -   we are using rollup for building the library it's all setup from the start
+  - we are using rollup for building the library it's all setup from the start
 
--   CI/CD (github actions) :
-    -   storyBook (gh-action) builds and deploys the storybook bundle to github pages on user tag
-    -   chromatic (gh-action) builds and deploys the storybook bundle to chromatic and review visual diffs on user pull request and push to main
-    -   publish (gh-action) build and publish the repository , release a new github release version on user push new tag "v\*"
+- CI/CD (github actions) :
+  - storyBook (gh-action) builds and deploys the storybook bundle to github pages on user tag
+  - chromatic (gh-action) builds and deploys the storybook bundle to chromatic and review visual diffs on user pull request and push to main
+  - publish (gh-action) build and publish the repository , release a new github release version on user push new tag "v\*"
 
 ## TODOs 🤯:
 
--   Improve Bundel size
--   Get some sleep
+- Improve Bundel size
+- Get some sleep
