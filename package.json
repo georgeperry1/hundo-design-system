@@ -1,6 +1,6 @@
 {
-  "name": "hundo-deaign-system",
-  "version": "1.2.0",
+  "name": "hundo-design-system",
+  "version": "1.0.0",
   "description": "Hundo's Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",

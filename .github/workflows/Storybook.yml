@@ -1,7 +1,7 @@
 # .github/workflows/chromatic.yml
 
 # Workflow name
-name: 'Deploy StoryBook'
+name: 'Deploy Storybook'
 
 # Event for the workflow
 on:
@@ -11,7 +11,7 @@ on:
 
 # List of jobs
 jobs:
-  storyBook-deployment:
+  storybook-deployment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
