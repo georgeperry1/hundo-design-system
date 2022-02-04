@@ -1,7 +1,8 @@
 import { addDecorator } from '@storybook/react';
 import { withThemesProvider } from 'storybook-addon-styled-component-theme';
 import { ThemeProvider } from 'styled-components';
-import darkTheme, { lightTheme } from '../src/theme';
+
+import darkTheme, { lightTheme } from '../src/components/theme/themes';
 
 const themes = [darkTheme, lightTheme];
 addDecorator(withThemesProvider(themes), ThemeProvider);
@@ -16,7 +17,7 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Docs', 'Getting Started', 'Components'],
+      order: ['Docs', 'Components'],
     },
   },
 };
