@@ -1,6 +1,6 @@
 # Hundo Design System 🎨
 
-<p align="center">
+<p>
 <a href="https://github.com/hundo-careers/hundo-design-system/actions/workflows/chromatic.yml">
 <img src="https://github.com/hundo-careers/hundo-design-system/actions/workflows/chromatic.yml/badge.svg?branch=main" />
 </a>
