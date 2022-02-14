@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-type BaseButtonProps = {
-  [key: string]: any;
-};
+import { ButtonProps } from '.';
 
 export const BaseButton = styled.button`
   border-radius: 4px;
@@ -17,7 +15,7 @@ export const BaseButton = styled.button`
   padding: 0 8px;
 `;
 
-const Button: React.FC<BaseButtonProps> = (props) => {
+const Button: React.FC<ButtonProps> = (props) => {
   return <BaseButton {...props} />;
 };
 

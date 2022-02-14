@@ -4,11 +4,9 @@ import BaseButton from './styled';
 
 export type ButtonProps = {
   isFullWidth?: boolean;
-  type?: string;
   htmlType?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'];
   ghost?: boolean;
   href?: string;
-  disabled?: boolean;
   loading?: boolean;
   onClick?: () => void;
   icon?: ReactChild;
