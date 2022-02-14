@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer should render 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdvvtL ejjYcN"
+    />
+  </div>
+</body>
+`;
+
+exports[`Spacer should support w and h 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdvvtL dWuokN"
+    />
+  </div>
+</body>
+`;
+
+exports[`Spacer should work with inline mode 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdvvtL gaPKoA"
+    />
+  </div>
+</body>
+`;
