@@ -19,7 +19,8 @@ declare module 'styled-components' {
   }
 }
 
-export const baseTheme: DefaultTheme = {
+export const lightTheme: DefaultTheme = {
+  name: 'light',
   space: [0, 2, 4, 8, 16, 32],
   colors: {
     primary: '#000000',
@@ -30,12 +31,15 @@ export const baseTheme: DefaultTheme = {
   radii: [0, 2, 4, 8],
 };
 
-export const lightTheme: DefaultTheme = {
-  ...baseTheme,
-  name: 'light',
-};
 
 export const darkTheme: DefaultTheme = {
-  ...baseTheme,
   name: 'dark',
+  space: [0, 2, 4, 8, 16, 32],
+  colors: {
+    primary: '#000000',
+    secondary: '#ffffff',
+  },
+  fonts: ['sans-serif', 'Roboto'],
+  fontSizes: [12, 14, 16, 18, 24, 32],
+  radii: [0, 2, 4, 8],
 };
