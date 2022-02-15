@@ -30,14 +30,12 @@ export const baseTheme: DefaultTheme = {
   radii: [0, 2, 4, 8],
 };
 
-const lightTheme: DefaultTheme = {
+export const lightTheme: DefaultTheme = {
   ...baseTheme,
   name: 'light',
 };
 
-const darkTheme: DefaultTheme = {
+export const darkTheme: DefaultTheme = {
   ...baseTheme,
   name: 'dark',
 };
-
-export { lightTheme, darkTheme };
