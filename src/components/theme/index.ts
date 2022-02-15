@@ -38,7 +38,7 @@ declare module 'styled-components' {
     fontSizes: Array<number>;
     radii: Array<number>;
     breakpoints: {
-      [name in 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl']: number;
+      [name in 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl']: number;
     };
   }
 }
@@ -74,9 +74,9 @@ export const defaultTheme: DefaultTheme = {
   breakpoints: {
     xxs: 320,
     xs: 375,
-    sm: 425,
-    md: 768,
-    lg: 1024,
+    s: 425,
+    m: 768,
+    l: 1024,
     xl: 1440,
     xxl: 2560,
   },
