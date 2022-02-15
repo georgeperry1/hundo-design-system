@@ -1,6 +1,19 @@
-node_modules
-lib
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# misc
+*/.DS_Store
+*.pem
 .eslintcache
-storybook-static
+lib
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+ 
+# Storybook
+/storybook-static
 build-storybook.log
-.DS_Store

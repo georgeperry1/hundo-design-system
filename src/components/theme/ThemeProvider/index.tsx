@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { DefaultTheme } from 'styled-components';
 
-import { lightTheme } from '../themes';
+import { lightTheme } from '../';
 
 interface Props {
   children: React.ReactNode;
