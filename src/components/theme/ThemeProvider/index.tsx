@@ -1,19 +1,14 @@
-import React from 'react';
-import { ThemeProvider as StyledThemeProvider } from 'styled-components';
-import { DefaultTheme } from 'styled-components';
+import { ThemeProvider as StyledThemeProvider, DefaultTheme } from 'styled-components';
 
-import { lightTheme } from '../';
+import { defaultTheme } from '../';
 
-interface Props {
-  children: React.ReactNode;
+type ThemeProps = {
+  children: React.ReactChildren;
   theme?: DefaultTheme;
-}
-
-const ThemeProvider: React.FC<Props> = ({ children, theme }) => {
-  if (theme) {
-    return <StyledThemeProvider theme={theme}>{children}</StyledThemeProvider>;
-  }
-  return <StyledThemeProvider theme={lightTheme}>{children}</StyledThemeProvider>;
 };
+
+const ThemeProvider = ({ children, theme }: ThemeProps): React.ReactElement => (
+  <StyledThemeProvider theme={theme ? theme : defaultTheme}>{children}</StyledThemeProvider>
+);
 
 export default ThemeProvider;

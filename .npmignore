@@ -5,7 +5,6 @@ build-storybook.log
 docs
 .vscode
 .storybook
-.husky
 .github
 .changeset
 __mocks__

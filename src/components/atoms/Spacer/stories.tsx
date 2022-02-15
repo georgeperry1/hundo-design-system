@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react';
 import Spacer, { SpacerProps } from '.';
 
 export default {
-  title: 'Components/Spacer',
+  title: 'Components/Atoms/Spacer',
   component: Spacer,
 } as Meta;
 
@@ -45,12 +45,11 @@ H.args = {
 };
 
 export const Inline: Story<SpacerProps> = (args) => (
-  <div style={{ display: 'flex', flexDirection: 'row' }}>
-    <Block />
-    <p>Hello</p>
+  <p>
+    Hello
     <Spacer {...args} />
-    <Block />
-  </div>
+    Hundo!
+  </p>
 );
 
 Inline.args = {
