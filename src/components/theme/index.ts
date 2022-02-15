@@ -31,7 +31,6 @@ export const lightTheme: DefaultTheme = {
   radii: [0, 2, 4, 8],
 };
 
-
 export const darkTheme: DefaultTheme = {
   name: 'dark',
   space: [0, 2, 4, 8, 16, 32],
