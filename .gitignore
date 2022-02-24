@@ -8,6 +8,7 @@
 *.pem
 .eslintcache
 lib
+.npmrc
 
 # debug
 npm-debug.log*
