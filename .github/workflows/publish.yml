@@ -24,7 +24,14 @@ jobs:
           node-version: 12.x
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@hundo-careers/hundo-design-system'
-      - run: npm install
-      - run: npm run release
+      - name: Install Dependencies
+        run: |
+          echo "@hundo-careers:registry=https://npm.pkg.github.com" > .npmrc
+          echo "//npm.pkg.github.com/:_authToken=$GITHUB_PAT" >> .npmrc
+          npm install
+        env:
+          GITHUB_PAT: ${{ secrets.REPO_READ_PAT }}
+      - name: Build & Release  
+        run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
