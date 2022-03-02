@@ -26,6 +26,11 @@ interface ThemeColors {
   secondaryPastel04: string;
 }
 
+interface Fonts {
+  primary: string;
+  secondary: string;
+}
+
 interface CustomTheme {
   name?: string;
 }
@@ -33,7 +38,7 @@ interface CustomTheme {
 declare module 'styled-components' {
   export interface DefaultTheme extends CustomTheme {
     colors: ThemeColors;
-    fonts: Array<string>;
+    fonts: Fonts;
     space: Array<number>;
     fontSizes: Array<number>;
     radii: Array<number>;
@@ -68,7 +73,10 @@ export const defaultTheme: DefaultTheme = {
     secondaryPastel03: '#E380B0',
     secondaryPastel04: '#3861D4',
   },
-  fonts: ['GeorgioSansHeavy', 'Inter'],
+  fonts: {
+    primary: 'GeorgioSansHeavy',
+    secondary: 'Inter',
+  },
   fontSizes: [12, 14, 16, 18, 24, 32],
   radii: [0, 2, 4, 8],
   breakpoints: {

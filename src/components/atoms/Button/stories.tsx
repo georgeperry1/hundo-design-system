@@ -7,6 +7,6 @@ export default {
   component: Button,
 } as Meta;
 
-export const Template: Story<ButtonProps> = (args) => <Button {...args}>Button</Button>;
+const Template: Story<ButtonProps> = (args) => <Button {...args}>Button</Button>;
 
 export const Default = Template.bind({});

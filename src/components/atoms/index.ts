@@ -1,3 +1,2 @@
-import Spacer from './Spacer';
-
-export { Spacer };
+export { default as Spacer } from './Spacer';
+export { default as TabItem } from './TabItem';

@@ -1,0 +1,405 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer should change the alignments of the tabs 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  border-bottom: 1px solid;
+  border-bottom-color: #BDBDBD;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  opacity: 100%;
+  border-bottom: 4px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c1:hover {
+  border-bottom-color: #000000;
+}
+
+.c2 {
+  font-family: Inter;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+        value="Tab 1"
+      >
+        <p
+          class="c2"
+        >
+          Tab 1
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 2"
+      >
+        <p
+          class="c2"
+        >
+          Tab 2
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 3"
+      >
+        <p
+          class="c2"
+        >
+          Tab 3
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Spacer should hide the divider 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-bottom: 1px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  opacity: 100%;
+  border-bottom: 4px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c1:hover {
+  border-bottom-color: #000000;
+}
+
+.c2 {
+  font-family: Inter;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+        value="Tab 1"
+      >
+        <p
+          class="c2"
+        >
+          Tab 1
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 2"
+      >
+        <p
+          class="c2"
+        >
+          Tab 2
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 3"
+      >
+        <p
+          class="c2"
+        >
+          Tab 3
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Spacer should render 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-bottom: 1px solid;
+  border-bottom-color: #BDBDBD;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  opacity: 100%;
+  border-bottom: 4px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c1:hover {
+  border-bottom-color: #000000;
+}
+
+.c2 {
+  font-family: Inter;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+        value="Tab 1"
+      >
+        <p
+          class="c2"
+        >
+          Tab 1
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 2"
+      >
+        <p
+          class="c2"
+        >
+          Tab 2
+        </p>
+      </div>
+      <div
+        class="c1"
+        value="Tab 3"
+      >
+        <p
+          class="c2"
+        >
+          Tab 3
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Spacer should show an active tab when an initial value is passed 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-bottom: 1px solid;
+  border-bottom-color: #BDBDBD;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  opacity: 100%;
+  border-bottom: 4px solid;
+  border-bottom-color: #000000;
+}
+
+.c1:hover {
+  border-bottom-color: #000000;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  opacity: 100%;
+  border-bottom: 4px solid;
+  border-bottom-color: #ffffff;
+}
+
+.c3:hover {
+  border-bottom-color: #000000;
+}
+
+.c2 {
+  font-family: Inter;
+  font-size: 14;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <div
+        class="c1"
+        value="Tab 1"
+      >
+        <p
+          class="c2"
+        >
+          Tab 1
+        </p>
+      </div>
+      <div
+        class="c3"
+        value="Tab 2"
+      >
+        <p
+          class="c2"
+        >
+          Tab 2
+        </p>
+      </div>
+      <div
+        class="c3"
+        value="Tab 3"
+      >
+        <p
+          class="c2"
+        >
+          Tab 3
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;
