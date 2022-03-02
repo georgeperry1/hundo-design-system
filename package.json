@@ -1,6 +1,6 @@
 {
   "name": "@hundo-careers/hundo-design-system",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "description": "Hundo's Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
