@@ -53,6 +53,7 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
@@ -148,6 +149,7 @@ exports[`Spacer should hide the divider 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
@@ -243,6 +245,7 @@ exports[`Spacer should render 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
@@ -366,6 +369,7 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>

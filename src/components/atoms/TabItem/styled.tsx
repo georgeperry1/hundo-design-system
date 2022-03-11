@@ -51,6 +51,7 @@ const SecondaryTab = styled.div<DefaultTabType>`
 
     return active ? theme.colors.secondaryNeon02 : 'transparent';
   }};
+  filter: ${({ active }) => (active ? 'blur(0.5px)' : 'none')};
 
   &:hover {
     border-bottom-color: ${({ theme }) => theme.colors.secondaryNeon02};
@@ -66,6 +67,7 @@ export const TabText = styled.p<DefaultTabTextType>`
   margin: 10px 0;
   color: ${({ theme, variant }) =>
     variant === TabVariant.Primary ? theme.colors.fullBlack : theme.colors.secondaryNeon02};
+  text-transform: ${({ variant }) => (variant === TabVariant.Primary ? 'none' : 'uppercase')};
 `;
 
 export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ children, variant, ...props }) => {

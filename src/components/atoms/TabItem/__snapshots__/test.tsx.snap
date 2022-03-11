@@ -36,6 +36,7 @@ exports[`Spacer should hide the border 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
@@ -90,6 +91,7 @@ exports[`Spacer should render 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
@@ -144,6 +146,7 @@ exports[`Spacer should show a bottom border when active 1`] = `
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
+  text-transform: none;
 }
 
 <body>
