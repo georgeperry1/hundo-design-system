@@ -4,7 +4,7 @@ import Card, { CardProps } from '.';
 import exampleImage from '../../../../assets/images/example.png';
 
 export default {
-  title: 'Components/Molecules/Card',
+  title: 'Components/Molecules/CardNew',
   component: Card,
 } as Meta;
 
