@@ -31,9 +31,10 @@ exports[`Spacer should hide the border 1`] = `
 
 .c1 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
@@ -84,9 +85,10 @@ exports[`Spacer should render 1`] = `
 
 .c1 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
@@ -137,9 +139,10 @@ exports[`Spacer should show a bottom border when active 1`] = `
 
 .c1 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 

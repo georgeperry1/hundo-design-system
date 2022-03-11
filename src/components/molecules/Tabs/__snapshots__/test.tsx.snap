@@ -48,9 +48,10 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
 
 .c2 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
@@ -142,9 +143,10 @@ exports[`Spacer should hide the divider 1`] = `
 
 .c2 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
@@ -236,9 +238,10 @@ exports[`Spacer should render 1`] = `
 
 .c2 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
@@ -358,9 +361,10 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
 
 .c2 {
   font-family: Inter;
-  font-size: 14;
+  font-size: 14px;
   font-weight: 500;
   line-height: 24px;
+  margin: 10px 0;
   color: #000000;
 }
 
