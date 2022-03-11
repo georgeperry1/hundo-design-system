@@ -20,7 +20,11 @@ Default.args = {
   ],
 };
 
-export const Secondary = Template.bind({});
+export const Secondary: Story<TabsProps> = (args) => (
+  <div style={{ background: 'black' }}>
+    <Tabs {...args} />
+  </div>
+);
 
 Secondary.args = {
   tabOptions: [

@@ -40,7 +40,7 @@ declare module 'styled-components' {
     colors: ThemeColors;
     fonts: Fonts;
     space: Array<number>;
-    fontSizes: Array<number>;
+    fontSizes: Array<string>;
     radii: Array<number>;
     breakpoints: {
       [name in 'xxs' | 'xs' | 's' | 'm' | 'l' | 'xl' | 'xxl']: number;
@@ -74,10 +74,10 @@ export const defaultTheme: DefaultTheme = {
     secondaryPastel04: '#3861D4',
   },
   fonts: {
-    primary: 'GeorgioSansHeavy',
+    primary: 'GiorgioSans-Heavy',
     secondary: 'Inter',
   },
-  fontSizes: [12, 14, 16, 18, 24, 32],
+  fontSizes: ['12px', '14px', '16px', '18px', '24px', '28px'],
   radii: [0, 2, 4, 8],
   breakpoints: {
     xxs: 320,

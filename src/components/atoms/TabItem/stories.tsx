@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 
 import TabItem, { TabItemProps } from '.';
+import { TabVariant } from '../../molecules/Tabs/types';
 
 export default {
   title: 'Components/Atoms/TabItem',
@@ -16,6 +17,19 @@ Default.args = {
   label: 'Hundo',
   active: false,
   hideBorder: false,
+};
+
+export const Secondary: Story<TabItemProps> = (args) => (
+  <div style={{ background: 'black' }}>
+    <TabItem {...args} />
+  </div>
+);
+Secondary.args = {
+  value: 'Hundo',
+  label: 'Hundo',
+  active: false,
+  hideBorder: false,
+  variant: TabVariant.Secondary,
 };
 
 export const Active = Template.bind({});

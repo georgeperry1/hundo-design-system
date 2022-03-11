@@ -41,7 +41,7 @@ const SecondaryTab = styled.div<DefaultTabType>`
   width: max-content;
   align-items: center;
   justify-content: center;
-  min-height: 35px;
+  min-height: 28px;
   padding: 0 12px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   opacity: ${({ disabled }) => (disabled ? '40%' : '100%')};
@@ -60,9 +60,10 @@ const SecondaryTab = styled.div<DefaultTabType>`
 export const TabText = styled.p<DefaultTabTextType>`
   font-family: ${({ theme, variant }) =>
     variant === TabVariant.Primary ? theme.fonts.secondary : theme.fonts.primary};
-  font-size: ${({ theme, variant }) => (variant === TabVariant.Primary ? theme.fontSizes[1] : theme.fontSizes[4])};
+  font-size: ${({ theme, variant }) => (variant === TabVariant.Primary ? theme.fontSizes[1] : theme.fontSizes[5])};
   font-weight: ${({ variant }) => (variant === TabVariant.Primary ? 500 : 900)};
   line-height: 24px;
+  margin: 10px 0;
   color: ${({ theme, variant }) =>
     variant === TabVariant.Primary ? theme.colors.fullBlack : theme.colors.secondaryNeon02};
 `;
