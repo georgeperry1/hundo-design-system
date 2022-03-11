@@ -1,5 +1,5 @@
 import React, { ReactChild } from 'react';
-import Logo from '/stories/assets/hundo-light.svg';
+import Logo from '/src/assets/hundo-light.svg';
 
 import { MainNavContainer, MainNavWrapper, LogoImage } from './styled';
 
