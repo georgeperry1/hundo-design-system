@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ButtonElement, ButtonWrapper, TextElement, ImgElement } from './styled';
 
-export type NavItemProps = {
+export type MainNavItemProps = {
   active?: boolean;
   icon?: string;
   text?: string;
@@ -10,7 +10,7 @@ export type NavItemProps = {
   shadowColor?: string;
 };
 
-const NavItem: React.FC<NavItemProps> = (props) => (
+const MainNavItem: React.FC<MainNavItemProps> = (props) => (
   <ButtonWrapper>
     <ButtonElement {...props}>
       <ImgElement src={props.icon} />
@@ -19,4 +19,4 @@ const NavItem: React.FC<NavItemProps> = (props) => (
   </ButtonWrapper>
 );
 
-export default NavItem;
+export default MainNavItem;
