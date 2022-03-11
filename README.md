@@ -5,7 +5,7 @@
 <img src="https://github.com/hundo-careers/hundo-design-system/actions/workflows/chromatic.yml/badge.svg?branch=main" />
 </a>
 
-## Development:
+## Getting started:
 
 __Start development server:__
 ```shell
@@ -16,6 +16,11 @@ __Release new version:__
 ```shell
 npm run release
 ```
+
+## Component design:
+
+__Atomic Design:__
+The components should be built using Atomic Design principles, this means that they are broken down into Atoms, Molecules, Organisms and Templates. The majority of components will be either Atoms or Molecules but you can find a comprehensive guide of their definitions [here](https://xd.adobe.com/ideas/process/ui-design/atomic-design-principles-methodology-101/).
 
 ## How to use:
 
@@ -28,7 +33,7 @@ In order to use the package within another repository, you'll need to set up an 
 
 You will then need to create a Github Personal Access Token, that can be used to autheicate yourself locally. To do this, click [this link](https://github.com/settings/tokens) and generate a new token. You should select the following scope:
 
-<img src="src/assets/scope.png">
+<img src="src/assets/images/scope.png">
 
 __Set Registry:__
 You will then need to run this command to login into Github Package manager:
@@ -69,7 +74,9 @@ const App = () => {
 }
 ```
 
-__Theming:__ 
+## Theming:
+
+__Using a theme:__ 
 
 The library includes a `ThemeProvider`, which is a component that provides the capacity to introduce themes to our base components. This utilises the Styled Components theme provider and docs can be found [here](https://styled-components.com/docs/advanced#theming).
 
@@ -84,4 +91,26 @@ const App = () => {
     </ThemeProvider>;
   );
 }
+```
+
+__Creating a theme:__ 
+
+Currently, we have only defined a single default theme, which is automatically set when using the `ThemeProvider`. However, you are able to create a new theme using the theme structure outlined in `src/components/theme/index.ts`:
+
+```js
+// First, declare the new theme
+declare module 'styled-components' {
+  export interface NewTheme extends CustomTheme {
+    // New definition
+  }
+}
+
+// Next, create the theme
+export const newTheme: NewTheme = {
+  name: 'New',
+  colors: {
+    primary: '#333333',
+    secondary: '#f1f1f1',
+  },
+};
 ```
