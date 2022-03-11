@@ -1,13 +1,13 @@
 import { Story, Meta } from '@storybook/react';
 
-import NavItem, { NavItemProps } from '.';
+import MainNavItem, { MainNavItemProps } from '.';
 
 export default {
-  title: 'Components/Atoms/NavItem',
-  component: NavItem,
+  title: 'Components/Atoms/MainNavItem',
+  component: MainNavItem,
 } as Meta;
 
-const Template: Story<NavItemProps> = (args) => <NavItem {...args}>{args.text}</NavItem>;
+export const Template: Story<MainNavItemProps> = (args) => <MainNavItem {...args}>{args.text}</MainNavItem>;
 
 Template.args = {
   active: false,

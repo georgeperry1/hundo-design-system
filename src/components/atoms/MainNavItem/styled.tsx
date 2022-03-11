@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-import { NavItemProps } from '.';
+import { MainNavItemProps } from '.';
 
 export const ButtonElement = styled.button`
-  width: ${({ active }: NavItemProps) => (active ? '100%' : '80%')};
-  background-color: ${({ backgroundColor }: NavItemProps) => (backgroundColor ? backgroundColor : '#FFFF50')};
+  width: ${({ active }: MainNavItemProps) => (active ? '100%' : '80%')};
+  background-color: ${({ backgroundColor }: MainNavItemProps) => (backgroundColor ? backgroundColor : '#FFFF50')};
   border: none;
-  color: ${({ shadowColor }: NavItemProps) => (shadowColor ? shadowColor : '#B7B73D')};
+  color: ${({ shadowColor }: MainNavItemProps) => (shadowColor ? shadowColor : '#B7B73D')};
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -39,6 +39,7 @@ export const ButtonElement = styled.button`
 
 export const ButtonWrapper = styled.div`
   width: 190px;
+  padding-left: 30px;
 `;
 
 export const TextElement = styled.span`
