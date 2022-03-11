@@ -1,6 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 
 import Tabs, { TabsProps } from '.';
+import { TabVariant } from './types';
 
 export default {
   title: 'Components/Molecules/Tabs',
@@ -17,6 +18,17 @@ Default.args = {
     { value: 'Tab 2', label: 'Tab 2' },
     { value: 'Tab 3', label: 'Tab 3' },
   ],
+};
+
+export const Secondary = Template.bind({});
+
+Secondary.args = {
+  tabOptions: [
+    { value: 'Tab 1', label: 'Tab 1' },
+    { value: 'Tab 2', label: 'Tab 2' },
+    { value: 'Tab 3', label: 'Tab 3' },
+  ],
+  variant: TabVariant.Secondary,
 };
 
 export const InitialValue = Template.bind({});

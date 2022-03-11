@@ -1,12 +1,21 @@
+import React from 'react';
 import styled from 'styled-components';
+
+import { TabVariant } from '../..//molecules/Tabs/types';
 
 type DefaultTabType = {
   active?: boolean;
   hideBorder?: boolean;
   disabled?: boolean;
+  variant?: TabVariant;
+  onClick: () => void;
 };
 
-export const DefaultTab = styled.div<DefaultTabType>`
+type DefaultTabTextType = {
+  variant?: TabVariant;
+};
+
+const PrimaryTab = styled.div<DefaultTabType>`
   display: flex;
   width: max-content;
   align-items: center;
@@ -27,10 +36,49 @@ export const DefaultTab = styled.div<DefaultTabType>`
   }
 `;
 
-export const TabText = styled.p`
-  font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: ${({ theme }) => theme.fontSizes[1]};
-  font-weight: 500;
-  line-height: 24px;
-  color: ${({ theme }) => theme.colors.fullBlack};
+const SecondaryTab = styled.div<DefaultTabType>`
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  min-height: 35px;
+  padding: 0 12px;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+  opacity: ${({ disabled }) => (disabled ? '40%' : '100%')};
+  border-bottom: 4px solid;
+  border-bottom-color: ${({ theme, active, hideBorder }) => {
+    if (hideBorder) return 'transparent';
+
+    return active ? theme.colors.secondaryNeon02 : 'transparent';
+  }};
+
+  &:hover {
+    border-bottom-color: ${({ theme }) => theme.colors.secondaryNeon02};
+  }
 `;
+
+export const TabText = styled.p<DefaultTabTextType>`
+  font-family: ${({ theme, variant }) =>
+    variant === TabVariant.Primary ? theme.fonts.secondary : theme.fonts.primary};
+  font-size: ${({ theme, variant }) => (variant === TabVariant.Primary ? theme.fontSizes[1] : theme.fontSizes[4])};
+  font-weight: ${({ variant }) => (variant === TabVariant.Primary ? 500 : 900)};
+  line-height: 24px;
+  color: ${({ theme, variant }) =>
+    variant === TabVariant.Primary ? theme.colors.fullBlack : theme.colors.secondaryNeon02};
+`;
+
+export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ children, variant, ...props }) => {
+  if (variant === TabVariant.Secondary) {
+    return (
+      <SecondaryTab variant={variant} {...props}>
+        {children}
+      </SecondaryTab>
+    );
+  }
+
+  return (
+    <PrimaryTab variant={variant} {...props}>
+      {children}
+    </PrimaryTab>
+  );
+};

@@ -65,7 +65,7 @@ export const defaultTheme: DefaultTheme = {
     grey05: '#E0E0E0',
     grey06: '#F2F2F2',
     secondaryNeon01: '#ED592B',
-    secondaryNeon02: '#0DB291',
+    secondaryNeon02: '#10DFC7', // Primary Green
     secondaryNeon03: '#E04F96',
     secondaryNeon04: '#0042F7',
     secondaryPastel01: '#E5A321',
