@@ -15,15 +15,22 @@ type DefaultTabTextType = {
   variant?: TabVariant;
 };
 
-const PrimaryTab = styled.div<DefaultTabType>`
+type DefaultTabIconType = {
+  src?: any;
+};
+
+const BaseTab = styled.div<DefaultTabType>`
   display: flex;
   width: max-content;
   align-items: center;
   justify-content: center;
-  min-height: 35px;
-  padding: 0 12px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
   opacity: ${({ disabled }) => (disabled ? '40%' : '100%')};
+`;
+
+const PrimaryTab = styled(BaseTab)<DefaultTabType>`
+  min-height: 35px;
+  padding: 0 12px;
   border-bottom: 4px solid;
   border-bottom-color: ${({ theme, active, hideBorder }) => {
     if (hideBorder) return theme.colors.fullWhite;
@@ -36,15 +43,9 @@ const PrimaryTab = styled.div<DefaultTabType>`
   }
 `;
 
-const SecondaryTab = styled.div<DefaultTabType>`
-  display: flex;
-  width: max-content;
-  align-items: center;
-  justify-content: center;
+const SecondaryTab = styled(BaseTab)<DefaultTabType>`
   min-height: 28px;
   padding: 0 12px;
-  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
-  opacity: ${({ disabled }) => (disabled ? '40%' : '100%')};
   border-bottom: 4px solid;
   border-bottom-color: ${({ theme, active, hideBorder }) => {
     if (hideBorder) return 'transparent';
@@ -58,17 +59,67 @@ const SecondaryTab = styled.div<DefaultTabType>`
   }
 `;
 
-export const TabText = styled.p<DefaultTabTextType>`
-  font-family: ${({ theme, variant }) =>
-    variant === TabVariant.Primary ? theme.fonts.secondary : theme.fonts.primary};
-  font-size: ${({ theme, variant }) => (variant === TabVariant.Primary ? theme.fontSizes[1] : theme.fontSizes[5])};
-  font-weight: ${({ variant }) => (variant === TabVariant.Primary ? 500 : 900)};
+const IconTab = styled(BaseTab)<DefaultTabType>`
+  min-width: 350px;
+  min-height: 50px;
+  border-bottom: 4px solid;
+  border-bottom-color: ${({ theme, active, hideBorder }) => {
+    if (hideBorder) return theme.colors.offWhite;
+
+    return active ? theme.colors.offBlack : theme.colors.offWhite;
+  }};
+  background: ${({ theme }) => theme.colors.offWhite};
+
+  &:hover {
+    border-bottom-color: ${({ theme }) => theme.colors.offBlack};
+  }
+`;
+
+export const TabIcon = styled.img<DefaultTabIconType>`
+  width: 26px;
+  height: 26px;
+  margin-right: 12px;
+`;
+
+const PrimaryTabText = styled.p<DefaultTabTextType>`
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-size: ${({ theme }) => theme.fontSizes[1]};
+  font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
-  color: ${({ theme, variant }) =>
-    variant === TabVariant.Primary ? theme.colors.fullBlack : theme.colors.secondaryNeon02};
-  text-transform: ${({ variant }) => (variant === TabVariant.Primary ? 'none' : 'uppercase')};
+  color: ${({ theme }) => theme.colors.fullBlack};
 `;
+
+const SecondaryTabText = styled.p<DefaultTabTextType>`
+  font-family: ${({ theme }) => theme.fonts.primary};
+  font-size: ${({ theme }) => theme.fontSizes[5]};
+  font-weight: 900;
+  line-height: 24px;
+  margin: 10px 0;
+  color: ${({ theme }) => theme.colors.secondaryNeon02};
+  text-transform: uppercase;
+`;
+
+const IconTabText = styled.p<DefaultTabTextType>`
+  font-family: ${({ theme }) => theme.fonts.secondary};
+  font-size: ${({ theme }) => theme.fontSizes[2]};
+  font-weight: 700;
+  line-height: 16px;
+  margin: 10px 0;
+  color: ${({ theme }) => theme.colors.offBlack};
+`;
+
+export const TabText: React.FC<React.PropsWithChildren<DefaultTabTextType>> = ({ children, variant, ...props }) => {
+  if (variant === TabVariant.Secondary) {
+    return <SecondaryTabText {...props}>{children}</SecondaryTabText>;
+  }
+
+  if (variant === TabVariant.Icon) {
+    return <IconTabText {...props}>{children}</IconTabText>;
+  }
+
+  return <PrimaryTabText {...props}>{children}</PrimaryTabText>;
+};
 
 export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ children, variant, ...props }) => {
   if (variant === TabVariant.Secondary) {
@@ -76,6 +127,14 @@ export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ childre
       <SecondaryTab variant={variant} {...props}>
         {children}
       </SecondaryTab>
+    );
+  }
+
+  if (variant === TabVariant.Icon) {
+    return (
+      <IconTab variant={variant} {...props}>
+        {children}
+      </IconTab>
     );
   }
 

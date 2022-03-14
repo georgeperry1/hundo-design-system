@@ -9,26 +9,35 @@ type TabBarProps = {
   variant?: TabVariant;
 };
 
-const PrimaryTabBar = styled.div<TabBarProps>`
+const BaseTabBar = styled.div<TabBarProps>`
   display: flex;
   align-items: center;
   justify-content: ${({ align }) => align};
+`;
+
+const PrimaryTabBar = styled(BaseTabBar)<TabBarProps>`
+  background: ${({ theme }) => theme.colors.fullWhite};
   border-bottom: 1px solid;
   border-bottom-color: ${({ theme, hideDivider }) => {
     return hideDivider ? theme.colors.fullWhite : theme.colors.grey04;
   }};
 `;
 
-const SecondaryTabBar = styled.div<TabBarProps>`
-  display: flex;
-  align-items: center;
-  justify-content: ${({ align }) => align};
+const SecondaryTabBar = styled(BaseTabBar)<TabBarProps>`
   background: transparent;
+`;
+
+const IconTabs = styled(BaseTabBar)<TabBarProps>`
+  background: ${({ theme }) => theme.colors.offWhite};
 `;
 
 export const TabBar: React.FC<React.PropsWithChildren<TabBarProps>> = ({ hideDivider, align, variant, children }) => {
   if (variant === TabVariant.Secondary) {
     return <SecondaryTabBar align={align}>{children}</SecondaryTabBar>;
+  }
+
+  if (variant === TabVariant.Icon) {
+    return <IconTabs align={align}>{children}</IconTabs>;
   }
 
   return (

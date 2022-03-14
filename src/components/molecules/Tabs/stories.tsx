@@ -35,6 +35,21 @@ Secondary.args = {
   variant: TabVariant.Secondary,
 };
 
+export const Icon: Story<TabsProps> = (args) => (
+  <div style={{ background: 'black' }}>
+    <Tabs {...args} />
+  </div>
+);
+
+Icon.args = {
+  tabOptions: [
+    { value: 'Tab 1', label: 'Tab 1', icon: 'https://www.svgrepo.com/show/794/male-user.svg' },
+    { value: 'Tab 2', label: 'Tab 2', icon: 'https://www.svgrepo.com/show/794/male-user.svg' },
+    { value: 'Tab 3', label: 'Tab 3', icon: 'https://www.svgrepo.com/show/794/male-user.svg' },
+  ],
+  variant: TabVariant.Icon,
+};
+
 export const InitialValue = Template.bind({});
 
 InitialValue.args = {

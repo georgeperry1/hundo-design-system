@@ -14,6 +14,6 @@ export const MainNavWrapper = styled.div`
   justify-content: center;
 `;
 
-export const LogoImage = styled.img`
+export const LogoWrapper = styled.div`
   margin-bottom: 50px;
 `;

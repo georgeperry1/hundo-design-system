@@ -38,9 +38,18 @@ exports[`MainNav should render 1`] = `
       <div
         class="c1"
       >
-        <img
+        <div
           class="c2"
-        />
+        >
+          <div>
+            <div>
+              <div
+                data-src="../../../assets/hundo-light.svg"
+                src=""
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
