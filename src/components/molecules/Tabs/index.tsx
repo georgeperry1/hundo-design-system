@@ -56,6 +56,7 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = ({
             active={currentTab === value}
             hideBorder={hideBorder}
             variant={variant}
+            totalTabs={tabOptions.length}
             {...rest}
           />
         ))}
