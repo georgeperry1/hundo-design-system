@@ -19,4 +19,8 @@ const MainNavItem: React.FC<MainNavItemProps> = (props) => (
   </ButtonWrapper>
 );
 
+MainNavItem.defaultProps = {
+  active: false,
+};
+
 export default MainNavItem;
