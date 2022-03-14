@@ -1,6 +1,6 @@
 {
   "name": "@hundo-careers/hundo-design-system",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Hundo's Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -12,7 +12,6 @@
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs-build -s ./stories/assets",
-    "chromatic": "chromatic --exit-zero-on-changes",
     "lint": "eslint --fix '*/**/*.{js,ts,tsx}'",
     "release": "npm run build && npm publish",
     "build": "rollup -c",
@@ -48,7 +47,6 @@
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.23.0",
     "babel-loader": "^8.2.2",
-    "chromatic": "^5.10.2",
     "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
