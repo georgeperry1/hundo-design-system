@@ -11,7 +11,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -s ./public -p  6006",
-    "build-storybook": "build-storybook -o docs-build -s ./stories/assets",
+    "build-storybook": "build-storybook -o docs-build -s ./public/assets",
     "lint": "eslint --fix '*/**/*.{js,ts,tsx}'",
     "release": "npm run build && npm publish",
     "build": "rollup -c",
