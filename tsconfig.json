@@ -18,6 +18,6 @@
     "declaration": true,
     "outDir": "./lib",
   },
-  "include": ["**/*.ts", "**/*.tsx", "index.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules", "lib"]
 }
