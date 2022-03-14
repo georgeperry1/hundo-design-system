@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
-import HundoLogo from '../../../../public/assets/hundo-light.svg';
+import HundoLogo from '/public/assets/hundo-light.svg';
 
 import { MainNavContainer, MainNavWrapper, LogoWrapper } from './styled';
 
