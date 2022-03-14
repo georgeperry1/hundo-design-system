@@ -2,16 +2,17 @@ import styled from 'styled-components';
 
 import { MainNavItemProps } from '.';
 
-export const ButtonElement = styled.button`
-  width: ${({ active }: MainNavItemProps) => (active ? '100%' : '80%')};
-  background-color: ${({ backgroundColor }: MainNavItemProps) => (backgroundColor ? backgroundColor : '#FFFF50')};
+export const ButtonElement = styled.button<MainNavItemProps>`
+  width: ${({ active }) => (active ? '100%' : '80%')};
+  background-color: ${({ backgroundColor }) => (backgroundColor ? backgroundColor : '#FFFF50')};
   border: none;
-  color: ${({ shadowColor }: MainNavItemProps) => (shadowColor ? shadowColor : '#B7B73D')};
+  color: ${({ shadowColor }) => (shadowColor ? shadowColor : '#B7B73D')};
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: ${({ theme }) => theme.fontSizes[4]};
+  font-weight: 900;
+  font-family: ${({ theme }) => theme.fonts.primary};
   justify-content: center;
   line-height: 1.75rem;
   padding: 0.75rem 1.65rem;
@@ -27,6 +28,7 @@ export const ButtonElement = styled.button`
   -webkit-user-select: none;
   touch-action: manipulation;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+
   &:focus {
     outline: 0;
   }

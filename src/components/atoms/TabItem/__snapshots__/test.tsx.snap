@@ -17,36 +17,38 @@ exports[`Spacer should hide the border 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 35px;
-  padding: 0 12px;
   cursor: pointer;
   opacity: 100%;
+}
+
+.c1 {
+  min-height: 35px;
+  padding: 0 12px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
 
-.c0:hover {
+.c1:hover {
   border-bottom-color: #000000;
 }
 
-.c1 {
+.c2 {
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
-  text-transform: none;
 }
 
 <body>
   <div>
     <div
-      class="c0"
+      class="c0 c1"
       value="Tab 1"
     >
       <p
-        class="c1"
+        class="c2"
       >
         Tab 1
       </p>
@@ -72,36 +74,38 @@ exports[`Spacer should render 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 35px;
-  padding: 0 12px;
   cursor: pointer;
   opacity: 100%;
+}
+
+.c1 {
+  min-height: 35px;
+  padding: 0 12px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
 
-.c0:hover {
+.c1:hover {
   border-bottom-color: #000000;
 }
 
-.c1 {
+.c2 {
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
-  text-transform: none;
 }
 
 <body>
   <div>
     <div
-      class="c0"
+      class="c0 c1"
       value="Tab 1"
     >
       <p
-        class="c1"
+        class="c2"
       >
         Tab 1
       </p>
@@ -127,36 +131,38 @@ exports[`Spacer should show a bottom border when active 1`] = `
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  min-height: 35px;
-  padding: 0 12px;
   cursor: pointer;
   opacity: 100%;
+}
+
+.c1 {
+  min-height: 35px;
+  padding: 0 12px;
   border-bottom: 4px solid;
   border-bottom-color: #000000;
 }
 
-.c0:hover {
+.c1:hover {
   border-bottom-color: #000000;
 }
 
-.c1 {
+.c2 {
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
   color: #000000;
-  text-transform: none;
 }
 
 <body>
   <div>
     <div
-      class="c0"
+      class="c0 c1"
       value="Tab 1"
     >
       <p
-        class="c1"
+        class="c2"
       >
         Tab 1
       </p>

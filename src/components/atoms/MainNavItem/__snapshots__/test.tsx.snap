@@ -15,8 +15,9 @@ exports[`MainNav should render 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: GiorgioSans-Heavy;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -107,8 +108,9 @@ exports[`MainNav should show active state 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: GiorgioSans-Heavy;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
