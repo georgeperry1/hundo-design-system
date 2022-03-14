@@ -10,15 +10,15 @@
     8px 8px 0px black, 8.5px 8.5px 0px black, 9px 9px 0px black,
     9.5px 9.5px 0px black, 10px 10px 0px black;
 
-  // @include desktop {
-  //   margin: 0 40px 40px 0;
-  //   width: calc(calc(100% / 3) - 40px);
-  // }
+  @include desktop {
+    margin: 0 40px 40px 0;
+    width: calc(calc(100% / 3) - 40px);
+  }
 
-  // @include tablet {
-  //   margin: 0 40px 40px 0;
-  //   width: calc(calc(100% / 2) - 40px);
-  // }
+  @include tablet {
+    margin: 0 40px 40px 0;
+    width: calc(calc(100% / 2) - 40px);
+  }
 
   .drop-shadow {
     height: calc(100% - 3px);
