@@ -1,5 +1,3 @@
-declare module '*.scss';
-
 export type Course = {
   _id: string;
   name: string;
