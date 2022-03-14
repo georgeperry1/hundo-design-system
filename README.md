@@ -1,10 +1,5 @@
 # Hundo Design System 🎨
 
-<p>
-<a href="https://github.com/hundo-careers/hundo-design-system/actions/workflows/chromatic.yml">
-<img src="https://github.com/hundo-careers/hundo-design-system/actions/workflows/chromatic.yml/badge.svg?branch=main" />
-</a>
-
 ## Development:
 
 __Start development server:__

@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainNav should render 1`] = `
+.c1 {
+  width: 80%;
+  background-color: #FFFF50;
+  border: none;
+  color: #B7B73D;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  -webkit-text-decoration: none #000000 solid;
+  text-decoration: none #000000 solid;
+  -webkit-text-decoration-thickness: auto;
+  text-decoration-thickness: auto;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 1px 1px 0px 0px,2px 2px 0px 0px,3px 3px 0px 0px,4px 4px 0px 0px,5px 5px 0px 0px;
+}
+
+.c1:focus {
+  outline: 0;
+}
+
+.c1:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.c0 {
+  width: 190px;
+  padding-left: 30px;
+}
+
+.c3 {
+  color: #000000;
+}
+
+.c2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <button
+        class="c1"
+      >
+        <img
+          class="c2"
+          src="https://www.svgrepo.com/show/794/male-user.svg"
+        />
+        <span
+          class="c3"
+        >
+          Profile
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MainNav should show active state 1`] = `
+.c1 {
+  width: 100%;
+  background-color: #FFFF50;
+  border: none;
+  color: #B7B73D;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  -webkit-text-decoration: none #000000 solid;
+  text-decoration: none #000000 solid;
+  -webkit-text-decoration-thickness: auto;
+  text-decoration-thickness: auto;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: 1px 1px 0px 0px,2px 2px 0px 0px,3px 3px 0px 0px,4px 4px 0px 0px,5px 5px 0px 0px;
+}
+
+.c1:focus {
+  outline: 0;
+}
+
+.c1:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.c0 {
+  width: 190px;
+  padding-left: 30px;
+}
+
+.c3 {
+  color: #000000;
+}
+
+.c2 {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+<body>
+  <div>
+    <div
+      class="c0"
+    >
+      <button
+        class="c1"
+      >
+        <img
+          class="c2"
+          src="https://www.svgrepo.com/show/794/male-user.svg"
+        />
+        <span
+          class="c3"
+        >
+          Profile
+        </span>
+      </button>
+    </div>
+  </div>
+</body>
+`;

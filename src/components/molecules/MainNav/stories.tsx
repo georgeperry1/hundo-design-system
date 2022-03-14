@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/react';
 
 import MainNav from '.';
-import NavItem from '../MainNavItem';
+import NavItem from '../../atoms/MainNavItem';
 
 export default {
   title: 'Components/Atoms/MainNav',
