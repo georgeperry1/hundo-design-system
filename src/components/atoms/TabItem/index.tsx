@@ -23,7 +23,7 @@ const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant,
 
   return (
     <Tab onClick={onClick} variant={variant} {...props}>
-      {icon && <TabIcon src={icon} />}
+      {icon && <TabIcon src={icon} alt={label} />}
       <TabText variant={variant}>{label}</TabText>
     </Tab>
   );
