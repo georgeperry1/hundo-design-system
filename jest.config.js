@@ -8,4 +8,5 @@ module.exports = {
     '\\.svg$': 'jest-svg-transformer',
   },
   setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
+  testMatch: ['<rootDir>/src/**/*.test.@(ts|tsx)', '<rootDir>/src/**/test.@(ts|tsx)'],
 };

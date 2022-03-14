@@ -1,6 +1,6 @@
 {
   "name": "@hundo-careers/hundo-design-system",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "Hundo's Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -65,6 +65,7 @@
     "rollup": "^2.48.0",
     "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
     "storybook-addon-styled-component-theme": "^2.0.0",
     "styled-components": "^5.3.0",
