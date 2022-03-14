@@ -23,7 +23,7 @@ In order to use the package within another repository, you'll need to set up an 
 
 You will then need to create a Github Personal Access Token, that can be used to autheicate yourself locally. To do this, click [this link](https://github.com/settings/tokens) and generate a new token. You should select the following scope:
 
-<img src="src/assets/scope.png">
+<img src="./public/assets/scope.png">
 
 __Set Registry:__
 You will then need to run this command to login into Github Package manager:

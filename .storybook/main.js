@@ -2,7 +2,7 @@ module.exports = {
   stories: [
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
     '../src/**/stories.@(js|jsx|ts|tsx)',
-    '../stories/**/*.stories.mdx'
+    '../stories/**/*.stories.mdx',
   ],
   addons: [
     '@storybook/addon-links',
@@ -10,4 +10,5 @@ module.exports = {
     '@storybook/addon-a11y',
     'storybook-addon-styled-component-theme/dist/preset',
   ],
+  staticDirs: ['../public'],
 };

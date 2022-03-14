@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { TabVariant } from '../..//molecules/Tabs/types';
+import { TabVariant } from '../../molecules/Tabs/types';
 
 type DefaultTabType = {
   active?: boolean;
@@ -9,6 +9,7 @@ type DefaultTabType = {
   disabled?: boolean;
   variant?: TabVariant;
   onClick: () => void;
+  totalTabs?: number;
 };
 
 type DefaultTabTextType = {
@@ -60,7 +61,7 @@ const SecondaryTab = styled(BaseTab)<DefaultTabType>`
 `;
 
 const IconTab = styled(BaseTab)<DefaultTabType>`
-  min-width: 350px;
+  width: ${({ totalTabs }) => (totalTabs ? `${100 / totalTabs}%` : '100%')};
   min-height: 50px;
   border-bottom: 4px solid;
   border-bottom-color: ${({ theme, active, hideBorder }) => {

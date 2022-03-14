@@ -12,6 +12,7 @@ export type TabItemProps = {
   onTabClick: () => void;
   hideBorder?: boolean;
   variant?: TabVariant;
+  totalTabs: number;
 };
 
 const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant, icon, ...props }) => {
