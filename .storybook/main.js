@@ -10,5 +10,4 @@ module.exports = {
     '@storybook/addon-a11y',
     'storybook-addon-styled-component-theme/dist/preset',
   ],
-  staticDirs: ['../public'],
 };
