@@ -7,13 +7,13 @@ type DefaultTabType = {
   active?: boolean;
   hideBorder?: boolean;
   disabled?: boolean;
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
   onClick: () => void;
   totalTabs?: number;
 };
 
 type DefaultTabTextType = {
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
 };
 
 type DefaultTabIconType = {
