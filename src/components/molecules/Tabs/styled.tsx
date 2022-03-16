@@ -6,7 +6,7 @@ import { TabVariant } from './types';
 type TabBarProps = {
   hideDivider?: boolean;
   align?: CSSProperties['justifyContent'];
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
 };
 
 const BaseTabBar = styled.div<TabBarProps>`

@@ -9,7 +9,7 @@ export type TabOption = {
   label: string;
   icon?: ReactNode;
   disabled?: boolean;
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
 };
 
 export interface TabsProps {
@@ -20,7 +20,7 @@ export interface TabsProps {
   hideBorder?: boolean;
   onChange?: (val: string) => void;
   align?: CSSProperties['justifyContent'];
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
 }
 
 const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = ({

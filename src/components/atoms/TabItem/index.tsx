@@ -11,7 +11,7 @@ export type TabItemProps = {
   icon?: ReactNode;
   onTabClick: () => void;
   hideBorder?: boolean;
-  variant?: TabVariant.Icon | TabVariant.Secondary | TabVariant.Primary;
+  variant?: string;
   totalTabs: number;
 };
 
