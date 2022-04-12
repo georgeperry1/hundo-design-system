@@ -1,6 +1,6 @@
 {
   "name": "@hundo-careers/hundo-design-system",
-  "version": "1.9.8",
+  "version": "1.9.9",
   "description": "Hundo's Design System",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -79,7 +79,6 @@
   },
   "dependencies": {
     "@testing-library/react-hooks": "^7.0.2",
-    "react-svg": "^14.1.14",
     "styled-breakpoints": "^11.0.4"
   }
 }

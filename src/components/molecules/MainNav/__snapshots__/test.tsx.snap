@@ -26,10 +26,6 @@ exports[`MainNav should render 1`] = `
   justify-content: center;
 }
 
-.c2 {
-  margin-bottom: 50px;
-}
-
 <body>
   <div>
     <div
@@ -37,20 +33,7 @@ exports[`MainNav should render 1`] = `
     >
       <div
         class="c1"
-      >
-        <div
-          class="c2"
-        >
-          <div>
-            <div>
-              <div
-                data-src="https://www.svgrepo.com/show/794/male-user.svg"
-                src=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      />
     </div>
   </div>
 </body>
