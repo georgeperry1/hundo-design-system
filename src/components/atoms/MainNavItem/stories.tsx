@@ -12,7 +12,6 @@ export const Template: Story<MainNavItemProps> = (args) => <MainNavItem {...args
 Template.args = {
   active: false,
   text: 'Profile',
-  icon: 'https://www.svgrepo.com/show/794/male-user.svg',
   backgroundColor: '#FFFF50',
   shadowColor: '#B7B73D',
 };

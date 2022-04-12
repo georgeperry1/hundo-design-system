@@ -60,14 +60,8 @@ exports[`MainNav should render 1`] = `
   padding-left: 30px;
 }
 
-.c3 {
-  color: #000000;
-}
-
 .c2 {
-  width: 20px;
-  height: 20px;
-  margin-right: 12px;
+  color: #000000;
 }
 
 <body>
@@ -78,12 +72,8 @@ exports[`MainNav should render 1`] = `
       <button
         class="c1"
       >
-        <img
-          class="c2"
-          src="https://www.svgrepo.com/show/794/male-user.svg"
-        />
         <span
-          class="c3"
+          class="c2"
         >
           Profile
         </span>
@@ -153,14 +143,8 @@ exports[`MainNav should show active state 1`] = `
   padding-left: 30px;
 }
 
-.c3 {
-  color: #000000;
-}
-
 .c2 {
-  width: 20px;
-  height: 20px;
-  margin-right: 12px;
+  color: #000000;
 }
 
 <body>
@@ -171,12 +155,8 @@ exports[`MainNav should show active state 1`] = `
       <button
         class="c1"
       >
-        <img
-          class="c2"
-          src="https://www.svgrepo.com/show/794/male-user.svg"
-        />
         <span
-          class="c3"
+          class="c2"
         >
           Profile
         </span>

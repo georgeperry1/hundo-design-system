@@ -1,18 +1,17 @@
-import React from 'react';
-import { ReactSVG } from 'react-svg';
+import React, { Component } from 'react';
 
 import { MainNavContainer, MainNavWrapper, LogoWrapper } from './styled';
 
 type MainNavProps = {
-  logo?: string;
+  Logo?: typeof Component;
 };
 
-const MainNav: React.FC<React.PropsWithChildren<MainNavProps>> = ({ logo, children }) => (
+const MainNav: React.FC<React.PropsWithChildren<MainNavProps>> = ({ Logo, children }) => (
   <MainNavContainer>
     <MainNavWrapper>
-      {logo && (
+      {Logo && (
         <LogoWrapper>
-          <ReactSVG src={logo} />
+          <Logo />
         </LogoWrapper>
       )}
       {children}
