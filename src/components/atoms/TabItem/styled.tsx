@@ -7,13 +7,13 @@ type DefaultTabType = {
   active?: boolean;
   hideBorder?: boolean;
   disabled?: boolean;
-  variant?: TabVariant;
+  variant?: string;
   onClick: () => void;
   totalTabs?: number;
 };
 
 type DefaultTabTextType = {
-  variant?: TabVariant;
+  variant?: string;
 };
 
 const BaseTab = styled.div<DefaultTabType>`

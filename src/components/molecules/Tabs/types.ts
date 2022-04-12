@@ -1,5 +1,5 @@
-export enum TabVariant {
-  Primary = 'primary',
-  Secondary = 'secondary',
-  Icon = 'icon',
-}
+export const TabVariant = {
+  Primary: 'primary',
+  Secondary: 'secondary',
+  Icon: 'icon',
+};

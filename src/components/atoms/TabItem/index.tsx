@@ -11,7 +11,7 @@ export type TabItemProps = {
   Icon?: typeof Component;
   onTabClick: () => void;
   hideBorder?: boolean;
-  variant?: TabVariant;
+  variant?: string;
   totalTabs: number;
 };
 
