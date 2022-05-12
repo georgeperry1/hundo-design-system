@@ -44,7 +44,9 @@ exports[`Spacer should hide the border 1`] = `
 <body>
   <div>
     <div
+      aria-selected="true"
       class="c0 c1"
+      role="tab"
       value="Tab 1"
     >
       <p
@@ -101,7 +103,9 @@ exports[`Spacer should render 1`] = `
 <body>
   <div>
     <div
+      aria-selected="false"
       class="c0 c1"
+      role="tab"
       value="Tab 1"
     >
       <p
@@ -139,7 +143,7 @@ exports[`Spacer should show a bottom border when active 1`] = `
   min-height: 35px;
   padding: 0 12px;
   border-bottom: 4px solid;
-  border-bottom-color: #000000;
+  border-bottom-color: #ffffff;
 }
 
 .c1:hover {
@@ -158,7 +162,9 @@ exports[`Spacer should show a bottom border when active 1`] = `
 <body>
   <div>
     <div
+      aria-selected="true"
       class="c0 c1"
+      role="tab"
       value="Tab 1"
     >
       <p

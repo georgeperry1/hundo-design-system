@@ -13,9 +13,10 @@ export type TabItemProps = {
   hideBorder?: boolean;
   variant?: string;
   totalTabs: number;
+  id: string;
 };
 
-const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant, icon, ...props }) => {
+const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant, icon, active, id, ...props }) => {
   const onClick = () => {
     if (disabled) return;
 
@@ -23,7 +24,7 @@ const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant,
   };
 
   return (
-    <Tab onClick={onClick} variant={variant} {...props}>
+    <Tab onClick={onClick} variant={variant} aria-selected={active} aria-controls={id} {...props}>
       {icon && <TabIcon src={icon} alt={label} />}
       <TabText variant={variant}>{label}</TabText>
     </Tab>

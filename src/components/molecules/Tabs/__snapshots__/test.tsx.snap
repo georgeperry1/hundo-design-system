@@ -65,10 +65,16 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
 <body>
   <div>
     <div
+      aria-label="List of Tabs"
+      aria-orientation="horizontal"
       class="c0 c1"
+      role="tablist"
     >
       <div
+        aria-controls="id-Tab 1"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 1"
       >
         <p
@@ -78,7 +84,10 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 2"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 2"
       >
         <p
@@ -88,7 +97,10 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 3"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 3"
       >
         <p
@@ -167,10 +179,16 @@ exports[`Spacer should hide the divider 1`] = `
 <body>
   <div>
     <div
+      aria-label="List of Tabs"
+      aria-orientation="horizontal"
       class="c0 c1"
+      role="tablist"
     >
       <div
+        aria-controls="id-Tab 1"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 1"
       >
         <p
@@ -180,7 +198,10 @@ exports[`Spacer should hide the divider 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 2"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 2"
       >
         <p
@@ -190,7 +211,10 @@ exports[`Spacer should hide the divider 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 3"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 3"
       >
         <p
@@ -269,10 +293,16 @@ exports[`Spacer should render 1`] = `
 <body>
   <div>
     <div
+      aria-label="List of Tabs"
+      aria-orientation="horizontal"
       class="c0 c1"
+      role="tablist"
     >
       <div
+        aria-controls="id-Tab 1"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 1"
       >
         <p
@@ -282,7 +312,10 @@ exports[`Spacer should render 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 2"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 2"
       >
         <p
@@ -292,7 +325,10 @@ exports[`Spacer should render 1`] = `
         </p>
       </div>
       <div
+        aria-controls="id-Tab 3"
+        aria-selected="false"
         class="c2 c3"
+        role="tab"
         value="Tab 3"
       >
         <p
@@ -352,21 +388,10 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
   min-height: 35px;
   padding: 0 12px;
   border-bottom: 4px solid;
-  border-bottom-color: #000000;
-}
-
-.c3:hover {
-  border-bottom-color: #000000;
-}
-
-.c5 {
-  min-height: 35px;
-  padding: 0 12px;
-  border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
 
-.c5:hover {
+.c3:hover {
   border-bottom-color: #000000;
 }
 
@@ -382,10 +407,16 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
 <body>
   <div>
     <div
+      aria-label="List of Tabs"
+      aria-orientation="horizontal"
       class="c0 c1"
+      role="tablist"
     >
       <div
+        aria-controls="id-Tab 1"
+        aria-selected="true"
         class="c2 c3"
+        role="tab"
         value="Tab 1"
       >
         <p
@@ -395,7 +426,10 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
         </p>
       </div>
       <div
-        class="c2 c5"
+        aria-controls="id-Tab 2"
+        aria-selected="false"
+        class="c2 c3"
+        role="tab"
         value="Tab 2"
       >
         <p
@@ -405,7 +439,10 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
         </p>
       </div>
       <div
-        class="c2 c5"
+        aria-controls="id-Tab 3"
+        aria-selected="false"
+        class="c2 c3"
+        role="tab"
         value="Tab 3"
       >
         <p
