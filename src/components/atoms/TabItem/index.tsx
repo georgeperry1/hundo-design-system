@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import { Tab, TabText } from './styled';
+import { Tab, TabText, TabIcon } from './styled';
 import { TabVariant } from '../../molecules/Tabs/types';
 
 export type TabItemProps = {
@@ -8,7 +8,7 @@ export type TabItemProps = {
   label: string;
   disabled?: boolean;
   active?: boolean;
-  Icon?: typeof Component;
+  icon?: string;
   onTabClick: () => void;
   hideBorder?: boolean;
   variant?: string;
