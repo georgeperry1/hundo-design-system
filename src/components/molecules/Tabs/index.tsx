@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState, useEffect, ReactNode } from 'react';
+import React, { CSSProperties, useState, useEffect } from 'react';
 
 import { TabBar } from './styled';
 import { TabItem } from '../../atoms';
@@ -7,7 +7,7 @@ import { TabVariant } from './types';
 export type TabOption = {
   value: string;
   label: string;
-  icon?: ReactNode;
+  icon?: string;
   disabled?: boolean;
   variant?: string;
 };
