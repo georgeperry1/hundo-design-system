@@ -16,10 +16,6 @@ type DefaultTabTextType = {
   variant?: string;
 };
 
-type DefaultTabIconType = {
-  src?: any;
-};
-
 const BaseTab = styled.div<DefaultTabType>`
   display: flex;
   width: max-content;
@@ -74,12 +70,6 @@ const IconTab = styled(BaseTab)<DefaultTabType>`
   &:hover {
     border-bottom-color: ${({ theme }) => theme.colors.offBlack};
   }
-`;
-
-export const TabIcon = styled.img<DefaultTabIconType>`
-  width: 26px;
-  height: 26px;
-  margin-right: 12px;
 `;
 
 const PrimaryTabText = styled.p<DefaultTabTextType>`
