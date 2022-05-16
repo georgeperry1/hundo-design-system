@@ -41,13 +41,7 @@ export const TabBar: React.FC<React.PropsWithChildren<TabBarProps>> = ({ hideDiv
   }
 
   return (
-    <PrimaryTabBar
-      hideDivider={hideDivider}
-      align={align}
-      role="tablist"
-      aria-label="List of Tabs"
-      aria-orientation="horizontal"
-    >
+    <PrimaryTabBar hideDivider={hideDivider} align={align}>
       {children}
     </PrimaryTabBar>
   );
