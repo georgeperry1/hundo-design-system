@@ -50,7 +50,6 @@ const Tabs: React.FC<React.PropsWithChildren<TabsProps>> = ({
       {tabOptions &&
         tabOptions.map(({ value, ...rest }) => (
           <TabItem
-            id={`id-${value}`}
             onTabClick={() => onTabClick(value)}
             value={value}
             key={value}

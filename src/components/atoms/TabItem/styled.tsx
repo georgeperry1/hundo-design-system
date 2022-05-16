@@ -115,7 +115,7 @@ export const TabText: React.FC<React.PropsWithChildren<DefaultTabTextType>> = ({
 export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ children, variant, ...props }) => {
   if (variant === TabVariant.Secondary) {
     return (
-      <SecondaryTab role="tab" variant={variant} {...props}>
+      <SecondaryTab variant={variant} {...props}>
         {children}
       </SecondaryTab>
     );
@@ -123,14 +123,14 @@ export const Tab: React.FC<React.PropsWithChildren<DefaultTabType>> = ({ childre
 
   if (variant === TabVariant.Icon) {
     return (
-      <IconTab role="tab" variant={variant} {...props}>
+      <IconTab variant={variant} {...props}>
         {children}
       </IconTab>
     );
   }
 
   return (
-    <PrimaryTab role="tab" variant={variant} {...props}>
+    <PrimaryTab variant={variant} {...props}>
       {children}
     </PrimaryTab>
   );
