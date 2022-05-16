@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Tab, TabText } from './styled';
+import { Tab, TabText, TabIcon } from './styled';
 import { TabVariant } from '../../molecules/Tabs/types';
 
 export type TabItemProps = {
@@ -24,7 +24,7 @@ const TabItem: React.FC<TabItemProps> = ({ onTabClick, label, disabled, variant,
 
   return (
     <Tab onClick={onClick} variant={variant} {...props}>
-      {icon && <img src={icon} alt={label} />}
+      {icon && <TabIcon src={icon} alt={label} />}
       <TabText variant={variant}>{label}</TabText>
     </Tab>
   );
