@@ -16,10 +16,6 @@ type DefaultTabTextType = {
   variant?: string;
 };
 
-type DefaultTabIconType = {
-  src?: string;
-};
-
 const BaseTab = styled.div<DefaultTabType>`
   display: flex;
   width: max-content;
@@ -102,12 +98,6 @@ const IconTabText = styled.p<DefaultTabTextType>`
   line-height: 16px;
   margin: 10px 0;
   color: ${({ theme }) => theme.colors.offBlack};
-`;
-
-export const TabIcon = styled.img<DefaultTabIconType>`
-  width: 26px;
-  height: 26px;
-  margin-right: 12px;
 `;
 
 export const TabText: React.FC<React.PropsWithChildren<DefaultTabTextType>> = ({ children, variant, ...props }) => {
