@@ -23,7 +23,8 @@ exports[`Spacer should hide the border 1`] = `
 
 .c1 {
   min-height: 35px;
-  padding: 0 12px;
+  padding: 0 32px;
+  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -80,7 +81,8 @@ exports[`Spacer should render 1`] = `
 
 .c1 {
   min-height: 35px;
-  padding: 0 12px;
+  padding: 0 32px;
+  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -137,7 +139,8 @@ exports[`Spacer should show a bottom border when active 1`] = `
 
 .c1 {
   min-height: 35px;
-  padding: 0 12px;
+  padding: 0 32px;
+  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #000000;
 }
