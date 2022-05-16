@@ -45,7 +45,6 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
 .c3 {
   min-height: 35px;
   padding: 0 32px;
-  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -56,7 +55,7 @@ exports[`Spacer should change the alignments of the tabs 1`] = `
 
 .c4 {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
@@ -148,7 +147,6 @@ exports[`Spacer should hide the divider 1`] = `
 .c3 {
   min-height: 35px;
   padding: 0 32px;
-  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -159,7 +157,7 @@ exports[`Spacer should hide the divider 1`] = `
 
 .c4 {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
@@ -251,7 +249,6 @@ exports[`Spacer should render 1`] = `
 .c3 {
   min-height: 35px;
   padding: 0 32px;
-  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -262,7 +259,7 @@ exports[`Spacer should render 1`] = `
 
 .c4 {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
@@ -354,7 +351,6 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
 .c3 {
   min-height: 35px;
   padding: 0 32px;
-  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #000000;
 }
@@ -366,7 +362,6 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
 .c5 {
   min-height: 35px;
   padding: 0 32px;
-  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: #ffffff;
 }
@@ -377,7 +372,7 @@ exports[`Spacer should show an active tab when an initial value is passed 1`] = 
 
 .c4 {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   margin: 10px 0;
