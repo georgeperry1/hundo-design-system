@@ -27,7 +27,8 @@ const BaseTab = styled.div<DefaultTabType>`
 
 const PrimaryTab = styled(BaseTab)<DefaultTabType>`
   min-height: 35px;
-  padding: 0 12px;
+  padding: 0 32px;
+  font-size: 16px;
   border-bottom: 4px solid;
   border-bottom-color: ${({ theme, active, hideBorder }) => {
     if (hideBorder) return theme.colors.fullWhite;
@@ -59,7 +60,7 @@ const SecondaryTab = styled(BaseTab)<DefaultTabType>`
 const IconTab = styled(BaseTab)<DefaultTabType>`
   width: ${({ totalTabs }) => (totalTabs ? `${100 / totalTabs}%` : '100%')};
   min-height: 50px;
-  border-bottom: 4px solid;
+  border-bottom: 2px solid;
   border-bottom-color: ${({ theme, active, hideBorder }) => {
     if (hideBorder) return theme.colors.offWhite;
 
