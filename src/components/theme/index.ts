@@ -19,6 +19,7 @@ interface ThemeColors {
   secondaryNeon02: string;
   secondaryNeon03: string;
   secondaryNeon04: string;
+  secondaryNeon05: string;
 
   secondaryPastel01: string;
   secondaryPastel02: string;
@@ -68,6 +69,7 @@ export const defaultTheme: DefaultTheme = {
     secondaryNeon02: '#10DFC7', // Primary Green
     secondaryNeon03: '#E04F96',
     secondaryNeon04: '#0042F7',
+    secondaryNeon05: '#FCFC45',
     secondaryPastel01: '#E5A321',
     secondaryPastel02: '#8CC9A8',
     secondaryPastel03: '#E380B0',

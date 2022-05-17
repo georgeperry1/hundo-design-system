@@ -48,15 +48,17 @@ const SecondaryTab = styled(BaseTab)<DefaultTabType>`
   min-height: 28px;
   padding: 0 12px;
   border-bottom: 4px solid;
+  width: 100%;
+  justify-content: space-between;
   border-bottom-color: ${({ theme, active, hideBorder }) => {
     if (hideBorder) return 'transparent';
 
-    return active ? theme.colors.secondaryNeon02 : 'transparent';
+    return active ? theme.colors.secondaryNeon05 : 'transparent';
   }};
-  filter: ${({ active }) => (active ? 'blur(0.5px)' : 'none')};
+  opacity: ${({ active }) => active ? '100%' : '85%'};
 
   &:hover {
-    border-bottom-color: ${({ theme }) => theme.colors.secondaryNeon02};
+    border-bottom-color: ${({ theme }) => theme.colors.secondaryNeon05};
   }
 `;
 
@@ -91,7 +93,7 @@ const SecondaryTabText = styled.p<DefaultTabTextType>`
   font-weight: 900;
   line-height: 24px;
   margin: 10px 0;
-  color: ${({ theme }) => theme.colors.secondaryNeon02};
+  color: ${({ theme }) => theme.colors.secondaryNeon05};
   text-transform: uppercase;
 `;
 
