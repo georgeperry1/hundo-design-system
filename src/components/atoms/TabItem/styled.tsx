@@ -92,9 +92,10 @@ const SecondaryTabText = styled.p<DefaultTabTextType>`
   font-size: ${({ theme }) => theme.fontSizes[5]};
   font-weight: 900;
   line-height: 24px;
-  margin: 10px 0;
+  margin: 10px auto;
   color: ${({ theme }) => theme.colors.secondaryNeon05};
   text-transform: uppercase;
+  text-align: center;
 `;
 
 const IconTabText = styled.p<DefaultTabTextType>`
